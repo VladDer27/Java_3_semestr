@@ -8,7 +8,7 @@ import java.util.concurrent.Semaphore;
 
 public class SetSemaphore<E> implements Set<E> {
 
-    private Semaphore semaphore = new Semaphore(1, true);
+    private Semaphore semaphore = new Semaphore(1);
     private volatile Set<E> set = new HashSet<>();
         @Override
         public int size() {
